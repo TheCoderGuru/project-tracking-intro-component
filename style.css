@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.disabled {
+  color: #a0a1ac;
+}
+
+.badge {
+  background-color: #242942;
+  border-radius: 1em;
+  color: white;
+  padding-inline: .8em;
+  padding-block: .3em;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed';
+  font-weight: 700;
+  margin-right: 1em;
+}
+
+.spaced-text {
+  letter-spacing: .2em;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-inline: 8em;
+  -webkit-margin-before: 2em;
+          margin-block-start: 2em;
+}
+
+.navbar__navlinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  color: #242942;
+  font-weight: 700;
+  gap: 2em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed', sans-serif, Helvetica;
+}
+
+.container {
+  margin-left: 8em;
+  margin-block: 7em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+small {
+  font-family: 'Barlow Condensed';
+  color: #a0a1ac;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-top: .2em;
+  font-weight: 700;
+  width: 45%;
+  font-family: 'Barlow Condensed';
+  font-size: 3em;
+  color: #242942;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: #5b5f71;
+  margin-top: 1em;
+  width: 17%;
+  font-family: 'Barlow';
+  margin-bottom: 4em;
+}
+
+.btn {
+  margin-top: 3em;
+  text-decoration: none;
+  background-color: #ff5c5c;
+  padding-inline: 1.4em;
+  padding-block: .7em;
+  font-family: 'Barlow Condensed';
+  text-transform: uppercase;
+  font-weight: 600;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: .3em;
+  color: white;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2em;
+}
+
+div > p {
+  font-family: 'Barlow Condensed';
+  color: #a0a1ac;
+  text-transform: uppercase;
+}
+
+.container__image {
+  aspect-ratio: 1 / 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: auto;
+  height: auto;
+}
+/*# sourceMappingURL=style.css.map */
