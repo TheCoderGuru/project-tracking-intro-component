@@ -146,12 +146,8 @@ small {
   }
 
   .container__image{
-    height: 12rem;
-    width: auto;
-    position: none;
-    display: grid;
     order: -1;
-    place-items: center;
+    height: 5em;
   }
 
   .container__content{
