@@ -42,120 +42,170 @@ body {
     display: none;
   }
 
-  .container__image{
+  .container__image {
     margin: 0 auto;
     height: 2rem;
   }
 
-
-  .container__content{
+  .container__content {
     order: 2;
+  }
+
+  .container {
+    margin-left: 8em;
+    margin-block: 6em;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+
+    &__title {
+      margin-top: 0.2em;
+      font-weight: 700;
+      width: 54%;
+      font-family: "Barlow Condensed";
+      font-size: 3.5em;
+      color: hsl(230, 29%, 20%);
+      text-transform: uppercase;
+    }
+
+    &__subtitle {
+      color: hsl(230, 11%, 40%);
+      margin-top: 1em;
+      width: 27%;
+      font-size: 1.1rem;
+      font-family: "Barlow";
+      margin-bottom: 4em;
+    }
+
+    &__image {
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 0;
+      right: -16.7rem;
+    }
+
+    &__content {
+      margin-top: 3em;
+    }
   }
 }
 
 // Desktop Version
 
-.spaced-text {
-  font-family: "Barlow Condensed";
-  letter-spacing: 0.4em;
-  text-transform: uppercase;
-}
+// @media only screen and (min-width: 1440px) {
+//   .spaced-text {
+//     font-family: "Barlow Condensed";
+//     letter-spacing: 0.4em;
+//     text-transform: uppercase;
+//   }
 
-.text-disabled {
-  color: hsl(231, 7%, 65%);
-  letter-spacing: 0.3em;
-}
+//   .text-disabled {
+//     color: hsl(231, 7%, 65%);
+//     letter-spacing: 0.3em;
+//   }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  margin-inline: 8em;
-  position: relative;
-  margin-block-start: 2em;
+  
+//   small {
+//     font-family: "Barlow Condensed";
+//     color: hsl(231, 7%, 65%);
+//     width: 100%;
+//     text-transform: uppercase;
+//   }
 
-  &__navlinks {
-    display: flex;
-    position: absolute;
-    right: 0;
-    text-decoration: none;
-    list-style: none;
-    color: hsl(230, 29%, 20%);
-    font-weight: 700;
-    gap: 2em;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    font-family: "Barlow Condensed", sans-serif, Helvetica;
-  }
+//   .navbar {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-inline: 8em;
+//     position: relative;
+//     margin-block-start: 2em;
 
-  .navbar__navlinks + div > img {
-    display: none;
-  }
-}
+//     &__navlinks {
+//       display: flex;
+//       position: absolute;
+//       right: 0;
+//       text-decoration: none;
+//       list-style: none;
+//       color: hsl(230, 29%, 20%);
+//       font-weight: 700;
+//       gap: 2em;
+//       font-size: 1.1em;
+//       text-transform: uppercase;
+//       font-family: "Barlow Condensed", sans-serif, Helvetica;
+//     }
 
-small {
-  font-family: "Barlow Condensed";
-  color: hsl(231, 7%, 65%);
-  width: 100%;
-  text-transform: uppercase;
-}
+//     .navbar__navlinks + div > img {
+//       display: none;
+//     }
+//   }
 
-.container {
-  margin-left: 8em;
-  margin-block: 6em;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  position: relative;
+//   small {
+//     font-family: "Barlow Condensed";
+//     color: hsl(231, 7%, 65%);
+//     width: 100%;
+//     text-transform: uppercase;
+//   }
 
-  &__title {
-    margin-top: 0.2em;
-    font-weight: 700;
-    width: 54%;
-    font-family: "Barlow Condensed";
-    font-size: 3.5em;
-    color: hsl(230, 29%, 20%);
-    text-transform: uppercase;
-  }
+//   .container {
+//     margin-left: 8em;
+//     margin-block: 6em;
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     position: relative;
 
-  &__subtitle {
-    color: hsl(230, 11%, 40%);
-    margin-top: 1em;
-    width: 27%;
-    font-size: 1.1rem;
-    font-family: "Barlow";
-    margin-bottom: 4em;
-  }
+//     &__title {
+//       margin-top: 0.2em;
+//       font-weight: 700;
+//       width: 54%;
+//       font-family: "Barlow Condensed";
+//       font-size: 3.5em;
+//       color: hsl(230, 29%, 20%);
+//       text-transform: uppercase;
+//     }
 
-  &__image {
-    aspect-ratio: 1 / 1;
-    object-fit: contain;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    right: -16.7rem;
-  }
+//     &__subtitle {
+//       color: hsl(230, 11%, 40%);
+//       margin-top: 1em;
+//       width: 27%;
+//       font-size: 1.1rem;
+//       font-family: "Barlow";
+//       margin-bottom: 4em;
+//     }
 
-  &__content {
-    margin-top: 3em;
-  }
-}
+//     &__image {
+//       aspect-ratio: 1 / 1;
+//       object-fit: contain;
+//       width: auto;
+//       height: auto;
+//       position: absolute;
+//       top: 0;
+//       right: -16.7rem;
+//     }
 
-.container__flex {
-  display: flex;
-  gap: 2em;
+//     &__content {
+//       margin-top: 3em;
+//     }
+//   }
 
-  &__btn {
-    margin-top: 3em;
-    text-decoration: none;
-    background-color: hsl(0, 100%, 68%);
-    padding-inline: 1.4em;
-    padding-block: 0.7em;
-    font-family: "Barlow Condensed";
-    text-transform: uppercase;
-    font-weight: 600;
-    width: fit-content;
-    border-radius: 0.3em;
-    color: white;
-    font-size: 1.2rem;
-  }
-}
+//   .container__flex {
+//     display: flex;
+//     gap: 2em;
+
+//     &__btn {
+//       margin-top: 3em;
+//       text-decoration: none;
+//       background-color: hsl(0, 100%, 68%);
+//       padding-inline: 1.4em;
+//       padding-block: 0.7em;
+//       font-family: "Barlow Condensed";
+//       text-transform: uppercase;
+//       font-weight: 600;
+//       width: fit-content;
+//       border-radius: 0.3em;
+//       color: white;
+//       font-size: 1.2rem;
+//     }
+//   }
+// }

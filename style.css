@@ -40,124 +40,44 @@ body {
         -ms-flex-order: 2;
             order: 2;
   }
-}
-
-.spaced-text {
-  font-family: "Barlow Condensed";
-  letter-spacing: 0.4em;
-  text-transform: uppercase;
-}
-
-.text-disabled {
-  color: #a0a1ac;
-  letter-spacing: 0.3em;
-}
-
-.navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-inline: 8em;
-  position: relative;
-  -webkit-margin-before: 2em;
-          margin-block-start: 2em;
-}
-
-.navbar__navlinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  right: 0;
-  text-decoration: none;
-  list-style: none;
-  color: #242942;
-  font-weight: 700;
-  gap: 2em;
-  font-size: 1.1em;
-  text-transform: uppercase;
-  font-family: "Barlow Condensed", sans-serif, Helvetica;
-}
-
-.navbar .navbar__navlinks + div > img {
-  display: none;
-}
-
-small {
-  font-family: "Barlow Condensed";
-  color: #a0a1ac;
-  width: 100%;
-  text-transform: uppercase;
-}
-
-.container {
-  margin-left: 8em;
-  margin-block: 6em;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  position: relative;
-}
-
-.container__title {
-  margin-top: 0.2em;
-  font-weight: 700;
-  width: 54%;
-  font-family: "Barlow Condensed";
-  font-size: 3.5em;
-  color: #242942;
-  text-transform: uppercase;
-}
-
-.container__subtitle {
-  color: #5b5f71;
-  margin-top: 1em;
-  width: 27%;
-  font-size: 1.1rem;
-  font-family: "Barlow";
-  margin-bottom: 4em;
-}
-
-.container__image {
-  aspect-ratio: 1 / 1;
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 0;
-  right: -16.7rem;
-}
-
-.container__content {
-  margin-top: 3em;
-}
-
-.container__flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 2em;
-}
-
-.container__flex__btn {
-  margin-top: 3em;
-  text-decoration: none;
-  background-color: #ff5c5c;
-  padding-inline: 1.4em;
-  padding-block: 0.7em;
-  font-family: "Barlow Condensed";
-  text-transform: uppercase;
-  font-weight: 600;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  border-radius: 0.3em;
-  color: white;
-  font-size: 1.2rem;
+  .container {
+    margin-left: 8em;
+    margin-block: 6em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    position: relative;
+  }
+  .container__title {
+    margin-top: 0.2em;
+    font-weight: 700;
+    width: 54%;
+    font-family: "Barlow Condensed";
+    font-size: 3.5em;
+    color: #242942;
+    text-transform: uppercase;
+  }
+  .container__subtitle {
+    color: #5b5f71;
+    margin-top: 1em;
+    width: 27%;
+    font-size: 1.1rem;
+    font-family: "Barlow";
+    margin-bottom: 4em;
+  }
+  .container__image {
+    aspect-ratio: 1 / 1;
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: -16.7rem;
+  }
+  .container__content {
+    margin-top: 3em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
