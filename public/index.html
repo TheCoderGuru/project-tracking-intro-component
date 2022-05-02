@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- displays site properly based on user's device -->
 
     <link
@@ -21,7 +22,7 @@
     <header>
       <nav class="navbar">
         <div class="navbar__logo">
-          <img src="./images/logo.svg" alt="website logo" />
+          <img src="./assets/images/logo.svg" alt="website logo" />
         </div>
         <ul class="navbar__navlinks">
           <li class="navbar__navlinks__link">Product</li>
@@ -29,25 +30,37 @@
           <li class="navbar__navlinks__link">Pricing</li>
           <li class="navbar__navlinks__link disabled">Login</li>
         </ul>
-        <div><img src="./images/icon-hamburger.svg" alt=""></div>
+        <div class="menu">
+          <img src="./assets/images/icon-hamburger.svg" alt="" />
+        </div>
       </nav>
     </header>
     <main class="container">
+      <div>
+        <img
+          class="container__image"
+          src="./assets/images/illustration-devices.svg"
+          alt="illustration of a cellular phone"
+        />
+      </div>
       <div class="container__content">
         <small>
           <span class="badge">New</span>
           <span class="spaced-text">Monograph Dashboard</span>
         </small>
         <h1 class="container__title">Powerful insights into your team</h1>
-        <p class="container__subtitle">Project planning and time tracking for agile teams</p>
+        <p class="container__subtitle">
+          Project planning and time tracking for agile teams
+        </p>
         <div class="container__flex">
-          <div><a class="container__flex__btn" href="#">Schedule a demo</a></div>
+          <div>
+            <a class="container__flex__btn" href="#">Schedule a demo</a>
+          </div>
           <div>
             <p class="text-disabled spaced-text">to see a preview</p>
           </div>
         </div>
       </div>
-      <div><img class="container__image" src="./images/illustration-devices.svg" alt="illustration of a cellular phone"></div>
     </main>
   </body>
 </html>
