@@ -168,7 +168,8 @@ small {
     &__navlinks {
       display: flex;
       position: absolute;
-      right: 0;
+      right: 2em;
+      margin-block: 2em;
       text-decoration: none;
       list-style: none;
       color: hsl(230, 29%, 20%);
