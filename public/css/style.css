@@ -20,7 +20,8 @@ body {
   border-radius: 1em;
   color: white;
   padding-inline: 1em;
-  padding-block: 0.3em;
+  padding-block: 0.4em;
+  font-size: 0.9rem;
   text-transform: uppercase;
   font-family: "Barlow Condensed";
   font-weight: 700;
@@ -74,7 +75,7 @@ small {
   width: 67%;
   margin-block: 0.4em;
   font-family: "Barlow Condensed";
-  font-size: 3.2em;
+  font-size: 3.5em;
   color: hsl(230deg, 29%, 20%);
   text-transform: uppercase;
 }
@@ -106,7 +107,7 @@ small {
   text-decoration: none;
   background-color: hsl(0deg, 100%, 68%);
   padding-inline: 1.4em;
-  padding-block: 0.7em;
+  padding-block: 0.3em;
   font-family: "Barlow Condensed";
   text-transform: uppercase;
   font-weight: 600;
@@ -158,6 +159,7 @@ small {
     color: hsl(230deg, 29%, 20%);
     font-weight: 700;
     gap: 2em;
+    letter-spacing: 0.1rem;
     font-size: 1.1em;
     text-transform: uppercase;
     font-family: "Barlow Condensed", sans-serif, Helvetica;
@@ -225,7 +227,7 @@ small {
     text-decoration: none;
     background-color: hsl(0deg, 100%, 68%);
     padding-inline: 1.4em;
-    padding-block: 0.7em;
+    padding-block: 0.66em;
     font-family: "Barlow Condensed";
     text-transform: uppercase;
     font-weight: 600;
